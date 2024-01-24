@@ -5,21 +5,21 @@
 # 步驟
 
 1. 安裝套件
-
 ```sh
 npm i gh-pages
 ```
 
+2. vite.config.js 中， base 屬性設定為儲存庫名稱
+```sh
+base: "/<REPO>/"
+```
 
-2. 於 package.json 檔案設定 scripts
-
+3. 於 package.json 檔案設定 scripts
 ```sh
 "deploy": "vite build && gh-pages -d dist"
 ```
 
-
-3. 部屬指令
-
+4. 部屬指令
 ```sh
 npm run deploy
 ```
