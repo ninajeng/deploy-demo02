@@ -1,6 +1,6 @@
 # deploy-demo02
 
-使用 gh-pages 套件
+使用 gh-pages 套件進行部屬
 
 # 步驟
 
@@ -10,11 +10,13 @@
 npm i gh-pages
 ```
 
+
 2. 於 package.json 檔案設定 scripts
 
 ```sh
 "deploy": "vite build && gh-pages -d dist"
 ```
+
 
 3. 部屬指令
 
