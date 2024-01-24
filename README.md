@@ -1,35 +1,23 @@
-# demo1
+# deploy-demo02
 
-This template should help get you started developing with Vue 3 in Vite.
+使用 gh-pages 套件
 
-## Recommended IDE Setup
+# 步驟
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+1. 安裝套件
 
 ```sh
-npm install
+npm i gh-pages
 ```
 
-### Compile and Hot-Reload for Development
+2. 於 package.json 檔案設定 scripts
 
 ```sh
-npm run dev
+"deploy": "vite build && gh-pages -d dist"
 ```
 
-### Compile and Minify for Production
+3. 部屬指令
 
 ```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+npm run deploy
 ```
